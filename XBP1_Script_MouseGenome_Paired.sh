@@ -39,20 +39,12 @@ rsync -r -v -a   $path/$file/*.gz ./ #copy the samples foldeRa
 
 ls $TMPDIR
 
-# Select file based on data type
-#if [[ $DataType == 'seq']]
-#then
-#	echo "seq raw"
-	R1=$(ls $TMPDIR/*_R1*|tr "\n" ',')
-	R2=$(ls $TMPDIR/*_R2*|tr " " ',')
+echo "seq raw"
+R1=$(ls $TMPDIR/*_R1*|tr "\n" ',')
+R2=$(ls $TMPDIR/*_R2*|tr " " ',')
 
 
-#elif [[ $DataType == 'geo' ]]; then
-	#statements
-	echo "seq - from GEO"
-	R1=$(ls $TMPDIR/*_1*|tr " " ',')
-	R2=$(ls $TMPDIR/*_2*|tr " " ',')
-#fi
+
 
 echo "R1=${R1}"
 echo "R1=${R2}"

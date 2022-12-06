@@ -81,7 +81,7 @@ def Each_file_parse(Input_BCF,Sample_name,completedSamples):
 			  	
 			  	completedSamples.append(Sample_name)
 
-	if(  Sample_name not in completedSamples):
+		if(  Sample_name not in completedSamples):
                         Gene_ID="NM_005080"
                         position = 540
                         Target_anchor="-"

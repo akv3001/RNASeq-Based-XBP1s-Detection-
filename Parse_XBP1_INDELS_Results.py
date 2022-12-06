@@ -1,6 +1,6 @@
 ##***********************************************************************
 #Author: Akanksha Verma
-#Date: March 1st, 2015
+#Date: March 1st, 2017
 #Description:Parses per sample output file from XBP1 output and saves it to
 #			  specified output file on command line prompt while running  
 #			  Each sample
@@ -13,7 +13,8 @@ from decimal import Decimal
 import sys
 import os
 import re
-  #Input file - output of the XBP1 script
+
+#Input file - output of the XBP1 script
 
 
 def Each_file_parse(Input_BCF,Sample_name,completedSamples):	

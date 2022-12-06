@@ -15,10 +15,9 @@ Endoplasmic reticulum (ER) Stress, caused by accumulation of unfolded proteins i
 - Each of the parameters were tested with combinations configured in increments on validation RNASeq data, prior to establishing the selected ones. Below are values for all specified parameters. 
 
 *bowtie2 -p 8 -D 20 -R 3 -N 0 -L 20 -i S,1,0.50 --end-to-end --rdg 1,1 --rfg 1,1 --gbar 10* 
-- Samtools paramters are optimized to detect all long indels of up to 30bp, to enable detection of the very specific 26 bp XBP1s INDEL
-
+- Samtools paramters are optimized to detect all mutationas and long indels of up to 30bp, to enable detection of the very specific 26 bp XBP1s INDEL
 - the bash pipeline here is adapted to run on the SLURM job scheduler, but can be run using any batch jobs scheduler 
-- the output directory with sample specific read out can then be run through as an agrument to the pythong script to summarize results to summarized sample level XBP1s indel measure.
+- the output directory with sample specific VCF file readouts can then be run through as an agrument to the python script to summarize results to summarized sample level XBP1s indel measure.
 
 **Publications:**
 

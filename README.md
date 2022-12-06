@@ -6,6 +6,7 @@ Endoplasmic reticulum (ER) Stress, caused by accumulation of unfolded proteins i
 
 
 **Methods**
+
 - A combination of open-source, command line-based bioinformatics tools to process and quantify the indel from raw RNASeq FASTQ
 - customized reference for the alignment was generated using the XBP1 gene sequence for Human assemble hg19 and Mus Musculus mm10 RefSeq databases. As gene expression reference we used XBP1 gene with the 1820 bp in length human ortholog (RefSeq id: NM_005080) and 2264 bp Mouse ortholog (RefSeq id: NM_103842.3)
 - Using the Karkkainen’s blockwise algorithm based bowtie2-build, the index files for the gene sequence were generated respectively
@@ -14,3 +15,9 @@ Endoplasmic reticulum (ER) Stress, caused by accumulation of unfolded proteins i
 - Each of the parameters were tested with combinations configured in increments on validation RNASeq data, prior to establishing the selected ones. Below are values for all specified parameters. 
 
 *bowtie2 -p 8 -D 20 -R 3 -N 0 -L 20 -i S,1,0.50 --end-to-end --rdg 1,1 --rfg 1,1 --gbar 10* 
+
+**Publications:**
+
+This work was applied and validated in two independent publications. One referencing this pipeline was accepted and one is under review. *updates to come soon*
+
+- 

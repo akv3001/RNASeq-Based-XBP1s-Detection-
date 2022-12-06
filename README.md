@@ -16,8 +16,11 @@ Endoplasmic reticulum (ER) Stress, caused by accumulation of unfolded proteins i
 
 *bowtie2 -p 8 -D 20 -R 3 -N 0 -L 20 -i S,1,0.50 --end-to-end --rdg 1,1 --rfg 1,1 --gbar 10* 
 
+- the bash pipeline can be run using any batch jobs scheduler
+- the output directory with sample specific read out can then be run through as an agrument to the pythong script to summarize results to summarized sample level XBP1s indel measure.
+
 **Publications:**
 
 This work was applied and validated in two independent publications. One referencing this pipeline was accepted and one is under review. *updates to come soon*
 
-- 
+

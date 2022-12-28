@@ -33,7 +33,6 @@ def Each_file_parse(Input_BCF,Sample_name,completedSamples):
         	position=0
 		INDEL_Sequence="-"
         	Percentage_reads_with_indel=0
-        #print Gene_ID+"\t"+str(position)+"\t"+ INDEL_Sequence+"\t"+Target_anchor+"\t"+str(Depth)+"\t"+str(Total_Q13_Bases)+"\t"+str(Total_Q13_REF)+"\t"+str(Total_Q13_ALT)+"\t"+str(Percentage_reads_with_indel)+"\t"+Sample_name
 	
 
 	for line in  INPUT:
@@ -53,8 +52,7 @@ def Each_file_parse(Input_BCF,Sample_name,completedSamples):
 		
 		
 
-		if(Gene_ID == "NM_005080" and position == 540 and  len(INDEL_Sequence) > 30 ):
-		 #if(a len(INDEL_Sequence) >23):	
+		if(Gene_ID == "NM_005080" and position == 540 and  len(INDEL_Sequence) > 30 ):	
 			Target_anchor=INDEL[4]
 			Indel_INFO=INDEL[7].strip().split(";")
 			
